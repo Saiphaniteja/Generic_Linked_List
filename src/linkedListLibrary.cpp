@@ -1,4 +1,4 @@
-#include "linkedList.h"
+#include "linkedListLibrary.h"
 
 int addition(int firstNum, int secondNum)
 {

@@ -1,4 +1,4 @@
-#include "linkedList.h"
+#include "linkedListLibrary.h"
 #include <stdio.h>
 
 int main()
