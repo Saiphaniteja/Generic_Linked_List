@@ -4,7 +4,8 @@
 
 using namespace std;
 
-/*dataNode *createNode(void *inputData)
+/*
+dataNode *createNode(void *inputData)
 {
 	dataNode *tempNode = (dataNode *)malloc(sizeof(dataNode));
 	if(inputData != NULL)
@@ -16,15 +17,24 @@ using namespace std;
 		printf("Input Data is null");
 	}
 	return tempNode;
-}*/
+}
+*/
 
-retValue addNode(void *headNode,void *dataNode)
+retValue addNode(gLinkedList *headNode,void *input)
 {
 	retValue status = FAILURE;
-	if(NULL != headNode && NULL != dataNode)
+    if(NULL != input)
+    {
+    if(headNode == NULL)
+    {
+
+    }
+    else if(NULL != headNode && NULL != input)
 	{
+        printf("head is null");
 		status = SUCCESS;
 	}
+}
 	return status;
 }
 

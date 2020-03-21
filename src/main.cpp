@@ -2,26 +2,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct listData {
+struct testListData {
 	int integer1;
 	int integer2;
 };
 
-struct linkedList {
-	listData data;
-	linkedList *next;
-};
-
 int main()
 {
+	retValue ret = FAILURE;
+	gLinkedList *list = NULL;
+	testListData *testData = (testListData *)malloc(sizeof(testListData));
+	testData->integer1 = 10;
+	testData->integer2 = 20;
+
+	ret = addNode(list,testData);
+	printf("%d is return \n",ret);
+
+	//list.data  = &testData;
+
+	/* list
 	linkedList *list = (linkedList *) malloc(sizeof(linkedList));
-	listData *tempNode = (listData *) malloc(sizeof(listData));
+	linkedList *tempNode = (linkedList *) malloc(sizeof(linkedList));
+	linkedList *nodeData = (linkedList *) malloc(sizeof(linkedList));
 
 	tempNode->integer1 = 155;
 	tempNode->integer2  = 3;
-	//nodeData = (linkedList *)createNode(tempNode);
+	nodeData = (linkedList *)createNode(tempNode);
 	free(tempNode);
 
-	//addNode(list,node);
+	addNode(list,nodeData); */
+
   return 0;
 }
