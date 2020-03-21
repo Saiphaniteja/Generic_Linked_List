@@ -1,10 +1,27 @@
 #include "linkedListLibrary.h"
 #include <stdio.h>
+#include <stdlib.h>
+
+struct listData {
+	int integer1;
+	int integer2;
+};
+
+struct linkedList {
+	listData data;
+	linkedList *next;
+};
 
 int main()
 {
-  int firstNum = 2, secondNum = 3;
-  printf(" %d is sum of %d and %d ",addition(firstNum,secondNum),firstNum,secondNum);
-  printf("%d ", addNode());
+	linkedList *list = (linkedList *) malloc(sizeof(linkedList));
+	listData *tempNode = (listData *) malloc(sizeof(listData));
+
+	tempNode->integer1 = 155;
+	tempNode->integer2  = 3;
+	//nodeData = (linkedList *)createNode(tempNode);
+	free(tempNode);
+
+	//addNode(list,node);
   return 0;
 }

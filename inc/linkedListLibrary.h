@@ -6,8 +6,12 @@ typedef enum returnValue {
 	FAILURE = -1
 }retValue;
 
-retValue addNode(void);
+struct dataNode {
+	void *data;
+	dataNode *next;
+};
 
-int addition(int firstNum, int secondNum);
+//dataNode *createNode(void *inputData);
+retValue addNode(void *headNode,void *dataNode);
 
 #endif /*__LINKED_LIST_LIBRARY_H_*/
