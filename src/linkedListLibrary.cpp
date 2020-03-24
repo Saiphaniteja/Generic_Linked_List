@@ -23,18 +23,15 @@ dataNode *createNode(void *inputData)
 retValue addNode(gLinkedList *headNode,void *input)
 {
 	retValue status = FAILURE;
-    if(NULL != input)
-    {
-    if(headNode == NULL)
-    {
-
-    }
-    else if(NULL != headNode && NULL != input)
-	{
-        printf("head is null");
-		status = SUCCESS;
+	if (NULL != input) {
+		if (headNode == NULL) {
+			headNode->data = input;
+			//**headNode->next = NULL;
+		} else if (NULL != headNode && NULL != input) {
+			printf("head is null");
+			status = SUCCESS;
+		}
 	}
-}
 	return status;
 }
 

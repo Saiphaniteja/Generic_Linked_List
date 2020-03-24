@@ -10,12 +10,17 @@ struct testListData {
 int main()
 {
 	retValue ret = FAILURE;
-	gLinkedList *list = NULL;
-	testListData *testData = (testListData *)malloc(sizeof(testListData));
-	testData->integer1 = 10;
-	testData->integer2 = 20;
 
-	ret = addNode(list,testData);
+	gLinkedList *list = NULL;
+
+	testListData testData;
+	testData.integer1 = 10;
+	testData.integer2 = 20;
+
+	ret = addNode(list,&testData);
+
+
+
 	printf("%d is return \n",ret);
 
 	//list.data  = &testData;

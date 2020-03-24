@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUILD_DIR	Makefile	/^BUILD_DIR = build\/$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CXX	Makefile	/^CXX = g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -I$(INC_DIR) -L$(LIBS_DIR) -fPIC -g$/;"	m
+FAILURE	inc/linkedListLibrary.h	/^	FAILURE = -1$/;"	e	enum:returnValue
+INC_DIR	Makefile	/^INC_DIR = inc\/$/;"	m
+LIBS_DIR	Makefile	/^LIBS_DIR = libs\/$/;"	m
+SRC_DIR	Makefile	/^SRC_DIR = src\/$/;"	m
+SUCCESS	inc/linkedListLibrary.h	/^	SUCCESS = 0,$/;"	e	enum:returnValue
+__LINKED_LIST_LIBRARY_H_	inc/linkedListLibrary.h	9;"	d
+data	inc/linkedListLibrary.h	/^	void *data;$/;"	m	struct:gLinkedList
+gLinkedList	inc/linkedListLibrary.h	/^struct gLinkedList {$/;"	s
+integer1	src/main.cpp	/^	int integer1;$/;"	m	struct:testListData	file:
+integer2	src/main.cpp	/^	int integer2;$/;"	m	struct:testListData	file:
+main	src/main.cpp	/^int main()$/;"	f
+next	inc/linkedListLibrary.h	/^	gLinkedList *next;$/;"	m	struct:gLinkedList
+retValue	inc/linkedListLibrary.h	/^}retValue;$/;"	t	typeref:enum:returnValue
+returnValue	inc/linkedListLibrary.h	/^typedef enum returnValue {$/;"	g
+testListData	src/main.cpp	/^struct testListData {$/;"	s	file:

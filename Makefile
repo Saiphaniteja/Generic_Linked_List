@@ -11,11 +11,11 @@ all: clean create linkedListLibrary testLinkedListBinary
 create:
 	mkdir build/
 
-testLinkedListBinary: $(BUILD_DIR)/main.o 
+testLinkedListBinary: $(BUILD_DIR)/main.o
 	$(CXX) $(CXXFLAGS) -o $(BUILD_DIR)/testLinkedListBinary $(BUILD_DIR)/main.o -llinkedList
-	
+
 linkedListLibrary: $(BUILD_DIR)/linkedListLibrary.o
-	$(CXX) -o $(LIBS_DIR)/liblinkedList.so $(BUILD_DIR)/linkedListLibrary.o -shared  
+	$(CXX) -o $(LIBS_DIR)/liblinkedList.so $(BUILD_DIR)/linkedListLibrary.o -shared
 
 $(BUILD_DIR)/main.o:
 	$(CXX) $(CXXFLAGS) -c $(SRC_DIR)/main.cpp -o build/main.o
@@ -25,3 +25,4 @@ $(BUILD_DIR)/linkedListLibrary.o:
 
 clean:
 	rm -rf build/
+	rm $(LIBS_DIR)/liblinkedList.so
