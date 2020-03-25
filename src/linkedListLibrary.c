@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-using namespace std;
-
 /*
 dataNode *createNode(void *inputData)
 {

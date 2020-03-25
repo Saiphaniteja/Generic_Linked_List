@@ -24,5 +24,4 @@ main	src/main.c	/^int main()$/;"	f
 next	inc/linkedListLibrary.h	/^	struct gLinkedList *next;$/;"	m	struct:gLinkedList	typeref:struct:gLinkedList::gLinkedList
 retValue	inc/linkedListLibrary.h	/^}retValue;$/;"	t	typeref:enum:returnValue
 returnValue	inc/linkedListLibrary.h	/^typedef enum returnValue {$/;"	g
-std	src/linkedListLibrary.c	/^using namespace std;$/;"	v
 testListData	src/main.c	/^struct testListData {$/;"	s	file:
