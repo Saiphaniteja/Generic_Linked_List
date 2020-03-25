@@ -20,21 +20,15 @@ dataNode *createNode(void *inputData)
 }
 */
 
-retValue addNode(gLinkedList **headNode, void *input) {
+retValue addNode(gLinkedList *headNode, void *input) {
 	retValue status = FAILURE;
 	if (NULL != input) {
-		printf("%d %s \n",__LINE__,__func__);
-		if ((*headNode) == NULL) {
-			printf("%d %s \n",__LINE__,__func__);
-			headNode = (gLinkedList **) malloc(sizeof(gLinkedList));
-			printf("%d %s \n",__LINE__,__func__);
-			(*headNode)->data = input;
-			printf("%d %s \n",__LINE__,__func__);
-/*
-			(*headNode)->next = NULL;
-*/
-			printf("%d %s \n",__LINE__,__func__);
-
+		if ((headNode) == NULL) {
+			printf("head is null \n");
+			headNode = (struct gLinkedList*)malloc(sizeof(struct gLinkedList*));
+			(headNode)->data = input;
+			headNode->next = NULL;
+			status = SUCCESS;
 		} else if (NULL != headNode && NULL != input) {
 			printf("head is not null \n");
 			status = SUCCESS;

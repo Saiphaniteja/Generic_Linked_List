@@ -17,8 +17,12 @@ int main()
 	testData.integer1 = 10;
 	testData.integer2 = 20;
 
-	ret = addNode(&list,&testData);
-
+	ret = addNode(list,&testData);
+	testListData testData1;
+	testData1.integer1 = 10;
+	testData1.integer2 = 20;
+	printf("---\n");
+	ret = addNode(list,&testData1);
 
 
 	printf("%d is return \n",ret);
