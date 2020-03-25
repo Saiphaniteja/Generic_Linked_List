@@ -17,7 +17,7 @@ int main()
 	testData.integer1 = 10;
 	testData.integer2 = 20;
 
-	ret = addNode(list,&testData);
+	ret = addNode(&list,&testData);
 
 
 

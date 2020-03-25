@@ -27,6 +27,6 @@ struct gLinkedList {
 */
 
 //dataNode *createNode(void *inputData);
-retValue addNode(gLinkedList *headNode,void *input);
+retValue addNode(gLinkedList **headNode, void *input);
 
 #endif /*__LINKED_LIST_LIBRARY_H_*/

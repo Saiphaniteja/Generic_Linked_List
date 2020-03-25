@@ -6,7 +6,7 @@ SRC_DIR = src/
 CXXFLAGS = -I$(INC_DIR) -L$(LIBS_DIR) -fPIC -g
 BUILD_DIR = build/
 
-all: clean create linkedListLibrary testLinkedListBinary
+all: create linkedListLibrary testLinkedListBinary
 
 create:
 	mkdir build/
